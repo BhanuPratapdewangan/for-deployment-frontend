@@ -31,13 +31,13 @@ const SigninComponent = () => {
             method: "get",
             url: "https://for-deployment-backend.onrender.com/signin"
           }).then(response => {
-            for (var user of response.data) {
-              if (user.UserId == values.UserId && user.Password == values.Password) {
+            for (var User of response.data) {
+              if (User.UserId == values.UserId && User.Password == values.Password) {
                 setCookies("userId", values.UserId);
                 navigate('/home');
                 break;
               } else {
-                navigate('/invalid');
+                navigate('/invalid')
               }
             }
           })
