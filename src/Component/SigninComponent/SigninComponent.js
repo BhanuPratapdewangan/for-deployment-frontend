@@ -53,7 +53,7 @@ const SigninComponent = () => {
             <dd><Field type="password" name="Password" /></dd>
             <dd className='text-danger'><ErrorMessage name="Password" /></dd>
           </dl>
-          <button type="submit" className="btn btn-success">Signin</button>
+          <button type="submit" className="btn btn-success">SignIn</button>
           <div>
             <Link to="/signup">New User?Signin</Link>
           </div>
